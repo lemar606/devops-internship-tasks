@@ -1,0 +1,18 @@
+# Terraform files to ignore
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+crash.*.log
+*.log
+*.plan
+.terraform.lock.hcl
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.idea/
+.vscode/
