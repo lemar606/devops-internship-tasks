@@ -1,0 +1,5 @@
+dev_region = "eu-central-1"
+dev_cidr_block = "10.10.0.0/16"
+dev_sub_cidr_block = "10.10.70.0/24"
+dev_ami_image = "ami-0229b8f55e5178b65"
+dev_instance_type = "t2.micro"

@@ -1,0 +1,5 @@
+staging_region = "eu-west-1"
+staging_cidr_block = "10.30.0.0/16"
+staging_sub_cidr_block = "10.30.70.0/24"
+staging_ami_image = "ami-0fab1b527ffa9b942"
+staging_instance_type = "t2.micro"

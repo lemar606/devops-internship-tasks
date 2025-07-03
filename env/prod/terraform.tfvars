@@ -1,0 +1,15 @@
+prod_region = "us-east-1"
+prod_cidr_block = "10.20.0.0/16"
+prod_sub_cidr_block = "10.20.70.0/24"
+prod_ami_image = "ami-05ffe3c48a9991133"
+prod_instance_type = "t2.micro"
+prod_bucket_name = "2025gorbucketfirsttime"
+prod_allocated_storage = 10
+prod_db_name = "mydb"
+prod_engine = "mysql"
+prod_engine_version = "8.0"
+prod_instance_class = "db.t3.micro"
+prod_username = "foo"
+prod_password = "foobarbaz"
+prod_parameter_group_name = "default.mysql8.0"
+prod_skip_final_snapshot = true
