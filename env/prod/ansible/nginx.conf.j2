@@ -1,0 +1,23 @@
+# {{ ansible_managed }}
+server {
+    listen 8080;
+    server_name _;
+    root {{ wp_dir }};
+    index index.php;
+
+    location / {
+        try_files $uri $uri/ /index.php?$args;
+    }
+
+    location ~ \.php$ {
+        include fastcgi_params;
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param PHP_VALUE "upload_max_filesize=64M \n post_max_size=64M";
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
